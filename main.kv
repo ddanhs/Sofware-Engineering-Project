@@ -5,106 +5,74 @@
     spacing: '20dp'
 
     RelativeLayout:
-        canvas.before:
-            Color:
-                rgba : 0, 1, 0, 1
-
-        Button:
-            text: "Pic"
-            size_hint: (0.1, 0.4)
-            pos_hint: {"x": .25, "y": .35}
-
-        Label:
-            text : "USERNAME"
-            pos_hint: {"x": .0, "y": .15}
-
-        Label:
-            text : "OU // +19 points"
-            pos_hint: {"x": .0, "y": .00}
-
-        BoxLayout:
-            padding: [50, 10, 50, 10]
-            spacing: 20
-            pos_hint: {"x": -.0, "y": -.10}
-
-            Button:
-                text: "Link 1"
-                background_color: (1, 0.5, 0.6, 1)
-                size_hint: (0.08, 0.2)
-            Button:
-                text: "Link 2"
-                background_color: (1, 0.5, 0.6, 1)
-                size_hint: (0.08, 0.2)
-            Button:
-                text: "Link 3"
-                background_color: (1, 0.5, 0.6, 1)
-                size_hint: (0.08, 0.2)
-            Button:
-                text: "Link 4"
-                background_color: (1, 0.5, 0.6, 1)
-                size_hint: (0.08, 0.2)
-
-    FloatLayout:
-        Label:
-            text : "Top Projects "
-            pos: (0, 270)
-
-        Label:
-            text: "Project Name"
-            pos: (-200, 200)
-
-        Label:
-            text: "Description desc desc desc desc \n desc desc desc desc desc desc desc"
-            halign: 'left'
-            pos: (0, 160)
 
         Label:
             text: "Group Name"
-            pos: (200, 120)
+            text_size: cm(20), cm(10)
+            color: .2, .5, .4, 1
+            font_size: "20sp"
+            pos: (0,370)
 
+        TextInput:
+            hint_text: "Write Something..."
+            multiline: True
+            size_hint: (0.60, 0.14)
+            pos_hint: {"top": .81, "x": 0.025}
 
+        Button:
+            text: "Post"
+            font_size: "11sp"
+            size_hint: (0.05, 0.01)
+            pos: (460, 350)
 
         Label:
-            text: "Project Name"
-            pos: (-200,80)
-
-        Label:
-            text: "Description desc desc desc desc \n desc desc desc desc desc desc desc"
+            text: "Please vote for a time to meet up: \n(3/4 members have voted) "
             halign: 'left'
-            pos: (0, 40)
+            pos: (-250, 0)
+            canvas.before:
+                Color:
+                    rgba: .2, .5, .4, 1
+                Rectangle:
+                    pos: (20, 160)
+                    size: (500, 150)
 
         Label:
-            text: "Group Name"
-            pos: (200, 0)
+            text: "Post 2"
+            halign: 'left'
+            pos: (-345, -160)
+            canvas.before:
+                Color:
+                    rgba: .2, .5, .4, 1
+                Rectangle:
+                    pos: (20, 65)
+                    size: (500, 80)
 
         Label:
-            text : "Top Users "
-            pos: (0, -40)
+            text: "Group Information: \ngroup description about main goal and main interests "
+            halign: 'left'
+            pos: (-185, -260)
+            canvas.before:
+                Color:
+                    rgba: .30, .5, .45, 1
+                Rectangle:
+                    pos: (20, -40)
+                    size: (500, 90)
 
-    BoxLayout:
-        spacing: 10
-        Button:
-            text: "User4"
-            background_color: (1, 0.5, 0.6, 1)
-            size_hint: (0.20, 0.2)
-        Button:
-            text: "User1"
-            background_color: (1, 0.5, 0.6, 1)
-            size_hint: (0.20, 0.2)
-        Button:
-            text: "User2"
-            background_color: (1, 0.5, 0.6, 1)
-            size_hint: (0.20, 0.2)
-        Button:
-            text: "User3"
-            background_color: (1, 0.5, 0.6, 1)
-            size_hint: (0.20, 0.2)
-        Button:
-            text: "User5"
-            background_color: (1, 0.5, 0.6, 1)
-            size_hint: (0.20, 0.2)
-        Button:
-            text: "User6"
-            background_color: (1, 0.5, 0.6, 1)
-            size_hint: (0.20, 0.2)
-
+            BoxLayout:
+                pos: (31, -35)
+                Button:
+                    text: "4"
+                    background_color: (.2, .5, .4, 1)
+                    size_hint: (0.30, 0.3)
+                Button:
+                    text: "1"
+                    background_color: (.2, .5, .4, 1)
+                    size_hint: (0.30, 0.3)
+                Button:
+                    text: "2"
+                    background_color: (.2, .5, .4, 1)
+                    size_hint: (0.30, 0.3)
+                Button:
+                    text: "3"
+                    background_color: (.2, .5, .4, 1)
+                    size_hint: (0.30, 0.3)
