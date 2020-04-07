@@ -10,48 +10,39 @@
                 rgba : 0, 1, 0, 1
 
         Button:
-            text: "Login"
-            font_size: "20sp"
-            background_color: (1, 0.5, 0.6, 1)
-            color: (1, 1, 1, 1)
-            size_hint: (0.20, 0.2)
-            pos_hint: {"top": 1 , "left" : 1}
-
-        Button:
-            text: "Sign Up"
-            font_size: "20sp"
-            background_color: (1, 0.8, 1, 1)
-            color: (1, 1, 1, 1)
-            size_hint: (0.20, 0.2)
-            pos_hint: {"top" : 1, "right" : 1}
+            text: "Pic"
+            size_hint: (0.1, 0.4)
+            pos_hint: {"x": .25, "y": .35}
 
         Label:
-            text : "Email: "
-            pos: (-215, -5)
-
-        TextInput:
-            text: "Email"
-            on_touch_down: self.text = ''
-            multiline: False
-            font_size: "20sp"
-            background_color: (1, 1, 1, 0.5)
-            color: (1, 1, 1, 1)
-            size_hint: (0.40, 0.15)
-            pos: (240, 80)
+            text : "USERNAME"
+            pos_hint: {"x": .0, "y": .15}
 
         Label:
-            text : "Password: "
-            pos: (-215, -44)
+            text : "OU // +19 points"
+            pos_hint: {"x": .0, "y": .00}
 
-        TextInput:
-            text: "Password"
-            on_touch_down: self.text = ''
-            multiline: False
-            font_size: "20sp"
-            background_color: (1, 1, 1, 0.5)
-            color: (1, 1, 1, 1)
-            size_hint: (0.40, 0.15)
-            pos: (240, 40)
+        BoxLayout:
+            padding: [50, 10, 50, 10]
+            spacing: 20
+            pos_hint: {"x": -.0, "y": -.10}
+
+            Button:
+                text: "Link 1"
+                background_color: (1, 0.5, 0.6, 1)
+                size_hint: (0.08, 0.2)
+            Button:
+                text: "Link 2"
+                background_color: (1, 0.5, 0.6, 1)
+                size_hint: (0.08, 0.2)
+            Button:
+                text: "Link 3"
+                background_color: (1, 0.5, 0.6, 1)
+                size_hint: (0.08, 0.2)
+            Button:
+                text: "Link 4"
+                background_color: (1, 0.5, 0.6, 1)
+                size_hint: (0.08, 0.2)
 
     FloatLayout:
         Label:
@@ -91,6 +82,7 @@
             pos: (0, -40)
 
     BoxLayout:
+        spacing: 10
         Button:
             text: "User4"
             background_color: (1, 0.5, 0.6, 1)
@@ -107,5 +99,12 @@
             text: "User3"
             background_color: (1, 0.5, 0.6, 1)
             size_hint: (0.20, 0.2)
-
+        Button:
+            text: "User5"
+            background_color: (1, 0.5, 0.6, 1)
+            size_hint: (0.20, 0.2)
+        Button:
+            text: "User6"
+            background_color: (1, 0.5, 0.6, 1)
+            size_hint: (0.20, 0.2)
 
