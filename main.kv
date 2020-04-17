@@ -1,78 +1,234 @@
-<GridLayout>:
-    rows: 3
-    cols: 1
+<FloatLayout>:
 
-    spacing: '20dp'
+    Button:
+        text: "Pic"
+        size_hint: (0.1, 0.1)
+        pos_hint: {"x": .3, "y": .8}
 
-    RelativeLayout:
+    Label:
+        text : "USERNAME"
+        pos_hint: {"x": .0, "y": .37}
 
-        Label:
-            text: "Group Name"
-            text_size: cm(20), cm(10)
-            color: .2, .5, .4, 1
-            font_size: "20sp"
-            pos: (0,370)
+    Label:
+        text : "OU // +19 points"
+        pos_hint: {"x": .0, "y": .33}
 
-        TextInput:
-            hint_text: "Write Something..."
-            multiline: True
-            size_hint: (0.60, 0.14)
-            pos_hint: {"top": .81, "x": 0.025}
+    Label:
+        text: "Groups"
+        font_size: "21sp"
+        pos_hint: {"x": -.36, "y": .23}
 
+    BoxLayout:
+        spacing: 10
+        pos_hint: {"x": .1, "y": .6}
+        size_hint: (0.8, 0.5)
         Button:
-            text: "Post"
-            font_size: "11sp"
-            size_hint: (0.05, 0.01)
-            pos: (460, 350)
+            text: "Group1"
+            background_color: (.2, .5, .4, 1)
+            size_hint: (0.20, 0.2)
+        Button:
+            text: "Group2"
+            background_color: (.2, .5, .4, 1)
+            size_hint: (0.20, 0.2)
+        Button:
+            text: "Group3"
+            background_color: (.2, .5, .4, 1)
+            size_hint: (0.20, 0.2)
+        Button:
+            text: "Group4"
+            background_color: (.2, .5, .4, 1)
+            size_hint: (0.20, 0.2)
+        Button:
+            text: "Group5"
+            background_color: (.2, .5, .4, 1)
+            size_hint: (0.20, 0.2)
 
-        Label:
-            text: "Please vote for a time to meet up: \n(3/4 members have voted) "
-            halign: 'left'
-            pos: (-250, 0)
-            canvas.before:
-                Color:
-                    rgba: .2, .5, .4, 1
-                Rectangle:
-                    pos: (20, 160)
-                    size: (500, 150)
+    Label:
+        text: "Group1Name"
+        halign: 'center'
+        size: self.size
+        pos_hint: {"x": -.325, "y": .075}
+    Label:
+        text: "Group2Name"
+        halign: 'center'
+        pos_hint: {"x": -.1625, "y": .075}
+    Label:
+        text: "Group3Name"
+        halign: 'center'
+        pos_hint: {"x": .00, "y": .075}
+    Label:
+        text: "Group4Name"
+        halign: 'center'
+        pos_hint: {"x": .1625, "y": .075}
+    Label:
+        text: "Group5Name"
+        halign: 'center'
+        pos_hint: {"x": .325, "y": .075}
 
-        Label:
-            text: "Post 2"
-            halign: 'left'
-            pos: (-345, -160)
-            canvas.before:
-                Color:
-                    rgba: .2, .5, .4, 1
-                Rectangle:
-                    pos: (20, 65)
-                    size: (500, 80)
+    Label:
+        text: "Warnings"
+        font_size: "21sp"
+        pos_hint: {"x": -.345, "y": .0}
+        canvas.before:
+            Color:
+                rgba: .2, .5, .4, 1
+            Rectangle:
+                pos: (80,210)
+                size: (640, 73)
+    Label:
+        text: "1: Said Taboo Word"
+        halign: 'left'
+        size: self.size
+        pos_hint: {"x": -.295, "y": -.06}
+    Label:
+        text: "1.5: Failed to vote for Group Meeting"
+        halign: 'left'
+        size: self.size
+        pos_hint: {"x": -.226, "y": -.09}
+    Label:
+        text: "2: Failed to vote for Group Meeting"
+        halign: 'left'
+        size: self.size
+        pos_hint: {"x": -.232, "y": -.12}
 
-        Label:
-            text: "Group Information: \ngroup description about main goal and main interests "
-            halign: 'left'
-            pos: (-185, -260)
-            canvas.before:
-                Color:
-                    rgba: .30, .5, .45, 1
-                Rectangle:
-                    pos: (20, -40)
-                    size: (500, 90)
+    Label:
+        text: "White Box"
+        font_size: "21sp"
+        pos_hint: {"x": -.345, "y": -.20}
+        canvas.before:
+            Color:
+                rgba: .2, .5, .4, 1
+            Rectangle:
+                pos: (80,10)
+                size: (300, 152)
+    Label:
+        text: "(Users you automatically accept group requests from)"
+        font_size: "11sp"
+        pos_hint: {"x": -.211, "y": -.255}
 
-            BoxLayout:
-                pos: (31, -35)
-                Button:
-                    text: "4"
-                    background_color: (.2, .5, .4, 1)
-                    size_hint: (0.30, 0.3)
-                Button:
-                    text: "1"
-                    background_color: (.2, .5, .4, 1)
-                    size_hint: (0.30, 0.3)
-                Button:
-                    text: "2"
-                    background_color: (.2, .5, .4, 1)
-                    size_hint: (0.30, 0.3)
-                Button:
-                    text: "3"
-                    background_color: (.2, .5, .4, 1)
-                    size_hint: (0.30, 0.3)
+    TextInput:
+        hint_text:'Add or Remove User'
+        size_hint: (0.235, 0.05)
+        pos_hint: {"x": .113, "y": .17}
+
+    Button:
+        text: "+"
+        background_color: (.2, .5, .4, 1)
+        size_hint: (0.05, 0.05)
+        pos_hint: {"x": .355, "y": .17}
+
+    Button:
+        text: "-"
+        background_color: (.2, .5, .4, 1)
+        size_hint: (0.05, 0.05)
+        pos_hint: {"x": .41, "y": .17}
+
+    BoxLayout:
+        spacing: 10
+        pos_hint: {"x": .113, "y": .07}
+        size_hint: (0.35, 0.4)
+        Button:
+            text: "User1"
+            background_color: (.2, .5, .4, 1)
+            size_hint: (0.20, 0.2)
+        Button:
+            text: "User2"
+            background_color: (.2, .5, .4, 1)
+            size_hint: (0.20, 0.2)
+        Button:
+            text: "User3"
+            background_color: (.2, .5, .4, 1)
+            size_hint: (0.20, 0.2)
+        Button:
+            text: "User4"
+            background_color: (.2, .5, .4, 1)
+            size_hint: (0.20, 0.2)
+
+    Label:
+        text: "Username1"
+        font_size: "11sp"
+        pos_hint: {"x": -.346, "y": -.445}
+    Label:
+        text: "Username2"
+        font_size: "11sp"
+        pos_hint: {"x": -.256, "y": -.445}
+    Label:
+        text: "Username3"
+        font_size: "11sp"
+        pos_hint: {"x": -.166, "y": -.445}
+    Label:
+        text: "Username4"
+        font_size: "11sp"
+        pos_hint: {"x": -0.076, "y": -.445}
+
+
+    Label:
+        text: "Black Box"
+        font_size: "21sp"
+        pos_hint: {"x": .08, "y": -.20}
+        canvas.before:
+            Color:
+                rgba: .2, .5, .4, 1
+            Rectangle:
+                pos: (420,10)
+                size: (300, 152)
+    Label:
+        text: "(Users you automatically reject group requests from)"
+        font_size: "11sp"
+        halign: 'left'
+        pos_hint: {"x": .215, "y": -.255}
+
+    TextInput:
+        hint_text:'Add or Remove User'
+        size_hint: (0.235, 0.05)
+        pos_hint: {"x": .538, "y": .17}
+
+    Button:
+        text: "+"
+        background_color: (.2, .5, .4, 1)
+        size_hint: (0.05, 0.05)
+        pos_hint: {"x": .780, "y": .17}
+
+    Button:
+        text: "-"
+        background_color: (.2, .5, .4, 1)
+        size_hint: (0.05, 0.05)
+        pos_hint: {"x": .835, "y": .17}
+
+    BoxLayout:
+        spacing: 10
+        pos_hint: {"x": .538, "y": .07}
+        size_hint: (0.35, 0.4)
+        Button:
+            text: "User1"
+            background_color: (.2, .5, .4, 1)
+            size_hint: (0.20, 0.2)
+        Button:
+            text: "User2"
+            background_color: (.2, .5, .4, 1)
+            size_hint: (0.20, 0.2)
+        Button:
+            text: "User3"
+            background_color: (.2, .5, .4, 1)
+            size_hint: (0.20, 0.2)
+        Button:
+            text: "User4"
+            background_color: (.2, .5, .4, 1)
+            size_hint: (0.20, 0.2)
+
+    Label:
+        text: "Username1"
+        font_size: "11sp"
+        pos_hint: {"x": 0.079, "y": -.445}
+    Label:
+        text: "Username2"
+        font_size: "11sp"
+        pos_hint: {"x": .169, "y": -.445}
+    Label:
+        text: "Username3"
+        font_size: "11sp"
+        pos_hint: {"x": .259, "y": -.445}
+    Label:
+        text: "Username4"
+        font_size: "11sp"
+        pos_hint: {"x": .349, "y": -.445}
